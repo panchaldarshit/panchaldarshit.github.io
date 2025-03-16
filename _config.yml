@@ -1,1 +1,8 @@
 theme: jekyll-theme-hacker
+title: Darshit Panchal - Portfolio
+description: Personal portfolio and resume website for Darshit Rajnikant Panchal
+url: "https://panchaldarshit.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown

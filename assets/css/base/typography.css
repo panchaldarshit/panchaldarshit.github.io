@@ -1,0 +1,136 @@
+/* Typography Scale */
+:root {
+    --font-family-base: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --font-family-heading: var(--font-family-base);
+    --font-family-mono: 'Cascadia Code', 'Fira Code', monospace;
+    
+    /* Line heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    
+    /* Letter spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.025em;
+    
+    /* Font weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+/* Base Typography */
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: var(--font-size-2xl);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+}
+
+h4 {
+    font-size: calc(var(--font-size-base) * 1.2);
+    font-weight: var(--font-weight-semibold);
+}
+
+h5, h6 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--secondary-color) 85%, black);
+}
+
+/* Lists */
+ul, ol {
+    padding-left: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Code */
+code, pre {
+    font-family: var(--font-family-mono);
+    font-size: 0.9em;
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+}
+
+code {
+    padding: 0.2em 0.4em;
+}
+
+pre {
+    padding: var(--spacing-sm);
+    overflow-x: auto;
+    margin-bottom: var(--spacing-md);
+}
+
+pre code {
+    padding: 0;
+    background: none;
+}
+
+/* Small text */
+small {
+    font-size: 0.875em;
+}
+
+/* Text selection */
+::selection {
+    background-color: color-mix(in srgb, var(--secondary-color) 30%, transparent);
+    color: var(--text-primary);
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    font-style: italic;
+    color: var(--text-secondary);
+} 
