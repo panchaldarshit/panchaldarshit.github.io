@@ -1,33 +1,25 @@
-// Main application functionality
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize section animations
-    const sections = document.querySelectorAll('.section');
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+// Dark mode toggle
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+const root = document.documentElement;
 
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
+function setTheme(mode) {
+  if (mode === 'dark') {
+    root.classList.add('dark');
+    themeIcon.textContent = '☀️';
+  } else {
+    root.classList.remove('dark');
+    themeIcon.textContent = '🌙';
+  }
+}
 
-    sections.forEach(section => {
-        sectionObserver.observe(section);
-    });
+const storedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+setTheme(storedTheme || (systemPrefersDark ? 'dark' : 'light'));
 
-    // Form submission handling
-    const contactForm = document.querySelector('.contact__form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Add your form submission logic here
-            const formData = new FormData(contactForm);
-            console.log('Form submitted:', Object.fromEntries(formData));
-            // You can add AJAX submission or other handling here
-        });
-    }
-}); 
+themeToggle.addEventListener('click', () => {
+  const isDark = root.classList.contains('dark');
+  const newTheme = isDark ? 'light' : 'dark';
+  setTheme(newTheme);
+  localStorage.setItem('theme', newTheme);
+});
