@@ -1,277 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darshit Panchal - Healthcare Integration Engineer</title>
-    <meta name="description" content="Senior Healthcare Integration Engineer specializing in HL7, FHIR, and healthcare system integrations">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darshit Rajnikant Panchal | Lead Healthcare Interoperability Architect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class'};</script>
 </head>
-<body>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <header class="header">
-            <div class="container header__container">
-                <div class="header__logo">
-                    <a href="#home">DP</a>
-                </div>
-                <button class="header__mobile-toggle" aria-label="Toggle menu">
-                    <span class="header__mobile-toggle-icon"></span>
-                </button>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#home">Home</a></li>
-                        <li class="header__nav-item"><a href="#about">About</a></li>
-                        <li class="header__nav-item"><a href="#skills">Skills</a></li>
-                        <li class="header__nav-item"><a href="#experience">Experience</a></li>
-                        <li class="header__nav-item"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
-        <div class="container hero__container">
-            <div class="hero__content">
-                <div class="hero__text">
-                    <p class="hero__welcome">Hi, I'm</p>
-                    <h1 class="hero__name">Darshit Panchal</h1>
-                    <h2 class="hero__title">Healthcare Integration Engineer</h2>
-                    <p class="hero__subtitle">Bridging Healthcare Systems Through Technology</p>
-                    <div class="hero__description">
-                        <p>Specialized in developing robust healthcare interfaces and implementing interoperability solutions that enhance patient care delivery.</p>
-                    </div>
-                    <div class="hero__stats">
-                        <div class="hero__stat-item">
-                            <span class="hero__stat-number">50+</span>
-                            <span class="hero__stat-label">Hospital Interfaces</span>
-                        </div>
-                        <div class="hero__stat-item">
-                            <span class="hero__stat-number">5+</span>
-                            <span class="hero__stat-label">Years Experience</span>
-                        </div>
-                        <div class="hero__stat-item">
-                            <span class="hero__stat-number">40%</span>
-                            <span class="hero__stat-label">Downtime Reduction</span>
-                        </div>
-                    </div>
-                    <div class="hero__cta">
-                        <a href="#contact" class="btn btn--primary">Get in Touch</a>
-                        <a href="#about" class="btn btn--secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <div class="hero__image-container">
-                        <img src="assets/images/profile.jpg" alt="Darshit Panchal" class="hero__profile-img">
-                    </div>
-                    <div class="hero__tech-stack">
-                        <div class="hero__tech-item">
-                            <i class="fas fa-laptop-medical"></i>
-                            <span>HL7</span>
-                        </div>
-                        <div class="hero__tech-item">
-                            <i class="fas fa-code"></i>
-                            <span>FHIR</span>
-                        </div>
-                        <div class="hero__tech-item">
-                            <i class="fas fa-server"></i>
-                            <span>Mirth</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body class="font-sans antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- Header -->
+  <header class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-700 z-50">
+    <div class="max-w-5xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-xl font-bold"><a href="#home">DRP</a></h1>
+      <button id="themeToggle" class="p-2 rounded-md border border-gray-300 dark:border-gray-600">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero / Header -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Darshit Rajnikant Panchal</h2>
+      <p class="text-xl sm:text-2xl mb-6">Lead Healthcare Interoperability Architect</p>
+      <div class="flex flex-col sm:flex-row gap-4 mb-6">
+        <a href="mailto:darshit@example.com" class="text-blue-600 dark:text-blue-400">darshit@example.com</a>
+        <a href="tel:+1234567890" class="text-blue-600 dark:text-blue-400">+1 (234) 567-890</a>
+        <span>New Jersey, USA</span>
+        <a href="https://linkedin.com/in/darshit" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400">LinkedIn</a>
+      </div>
+      <a href="#summary" class="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-md shadow hover:bg-blue-700 transition">Explore</a>
     </section>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section section--about">
-            <div class="container">
-                <h2 class="section__title">About Me</h2>
-                <div class="about__content">
-                    <div class="about__text">
-                        <p class="about__lead">
-                            Experienced Healthcare Integration Developer with over 5 years of expertise in bridging healthcare systems through robust interface solutions.
-                        </p>
-                        <p class="about__description">
-                            I specialize in developing and maintaining critical healthcare interfaces using industry-leading technologies like Mirth Connect, HL7, and FHIR. My focus is on creating reliable, secure, and efficient healthcare data exchanges that improve patient care delivery.
-                        </p>
-                    </div>
-                    <div class="about__cards">
-                        <div class="card">
-                            <i class="fas fa-laptop-medical card__icon"></i>
-                            <h3 class="card__title">Interface Development</h3>
-                            <p class="card__text">Creating seamless integrations between healthcare systems, ensuring efficient data flow and communication.</p>
-                        </div>
-                        <div class="card">
-                            <i class="fas fa-code-branch card__icon"></i>
-                            <h3 class="card__title">Technical Expertise</h3>
-                            <p class="card__text">Proficient in HL7, FHIR, Mirth Connect, and healthcare data transformation using Java and JavaScript.</p>
-                        </div>
-                        <div class="card">
-                            <i class="fas fa-shield-alt card__icon"></i>
-                            <h3 class="card__title">Healthcare Compliance</h3>
-                            <p class="card__text">Well-versed in HIPAA compliance and healthcare data security protocols.</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Summary -->
+    <section id="summary" class="max-w-4xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold mb-4">Summary</h3>
+      <p class="leading-relaxed">
+        Senior/principal-level architect specializing in cloud-native healthcare integration and interoperability. Drives adoption of HL7® FHIR® and SMART on FHIR solutions while leading cross-functional teams to deliver resilient APIs and data pipelines. Champions DevOps practices across AWS and Kubernetes, ensuring compliant, secure, and scalable platforms. Passionate about applying AI and machine learning to improve clinical workflows and patient outcomes.
+      </p>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="competencies" class="bg-gray-50 dark:bg-gray-800 py-16 px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Core Competencies</h3>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Interoperability</h4>
+          <p class="text-sm">HL7, FHIR, SMART on FHIR, X12, CDA</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Integration Engines</h4>
+          <p class="text-sm">Mirth Connect, Rhapsody, Corepoint, MuleSoft</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Programming</h4>
+          <p class="text-sm">Python, Java/Spring Boot, TypeScript, Go, SQL, Bash</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Cloud/DevOps</h4>
+          <p class="text-sm">AWS, Docker, Kubernetes, Terraform, Jenkins</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Data/Analytics</h4>
+          <p class="text-sm">PostgreSQL, MongoDB, Redis, Kafka, ELK stack</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">Security/Compliance</h4>
+          <p class="text-sm">HIPAA, OAuth2, TEFCA, OIDC, SOC2</p>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow hover:shadow-lg transition">
+          <h4 class="font-medium mb-2">AI/ML</h4>
+          <p class="text-sm">TensorFlow, NLP, Clinical ML, De-ID techniques</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Experience</h3>
+      <div class="space-y-4">
+        <details class="group bg-gray-50 dark:bg-gray-800 rounded-md">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-4">
+            <div>
+              <h4 class="font-medium">Lead Interoperability Architect – RAAPID INC</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">2023 – Present | Mirth, FHIR, AWS</p>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section section--skills">
-            <div class="container">
-                <h2 class="section__title">Technical Skills</h2>
-                <div class="skills__container">
-                    <div class="skills__category">
-                        <h3 class="skills__category-title">Healthcare Standards</h3>
-                        <!-- All trademarks, logos and brand names are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. -->
-                        <div class="skills__grid">
-                            <div class="skills__item">
-                                <img src="assets/images/hl7-v2-logo.png" alt="HL7" class="skills__icon">
-                                <h4 class="skills__name">HL7</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/fhir.png" alt="FHIR" class="skills__icon">
-                                <h4 class="skills__name">FHIR</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/x12-edi.png" alt="X12 EDI" class="skills__icon">
-                                <h4 class="skills__name">X12 EDI</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="skills__category">
-                        <h3 class="skills__category-title">Integration Engines</h3>
-                        <!-- All trademarks and product names mentioned are the property of their respective owners. Use of these names does not imply endorsement. -->
-                        <div class="skills__grid">
-                            <div class="skills__item">
-                                <img src="assets/images/mirth-connect.png" alt="Mirth Connect" class="skills__icon">
-                                <h4 class="skills__name">Mirth Connect</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/rhapsody.png" alt="Rhapsody" class="skills__icon">
-                                <h4 class="skills__name">Rhapsody</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__category">
-                        <h3 class="skills__category-title">Programming Languages</h3>
-                        <!-- Programming language logos are trademarks of their respective owners. Java is a trademark of Oracle Corporation. JavaScript is a trademark of Oracle Corporation. Python is a trademark of the Python Software Foundation. -->
-                        <div class="skills__grid">
-                            <div class="skills__item">
-                                <img src="assets/images/java.png" alt="Java" class="skills__icon">
-                                <h4 class="skills__name">Java</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/javascript.png" alt="JavaScript" class="skills__icon">
-                                <h4 class="skills__name">JavaScript</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/python.png" alt="Python" class="skills__icon">
-                                <h4 class="skills__name">Python</h4>
-                            </div>
-                            <div class="skills__item">
-                                <img src="assets/images/sql.png" alt="SQL" class="skills__icon">
-                                <h4 class="skills__name">SQL</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <span class="transition group-open:rotate-180">&#x2304;</span>
+          </summary>
+          <ul class="px-6 pb-4 list-disc text-sm">
+            <li>Designed cloud-native FHIR gateway handling millions of transactions.</li>
+            <li>Guided adoption of TEFCA-compliant exchange across partners.</li>
+            <li>Mentored engineering teams across integration and platform groups.</li>
+          </ul>
+        </details>
+        <details class="group bg-gray-50 dark:bg-gray-800 rounded-md">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-4">
+            <div>
+              <h4 class="font-medium">Senior Integration Engineer – Azova</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">2021 – 2023 | Rhapsody, HL7, Kubernetes</p>
             </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section section--experience">
-            <div class="container">
-                <h2 class="section__title">Professional Experience</h2>
-                <div class="timeline">
-                    <div class="timeline__item">
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Senior Healthcare Integration Engineer</h3>
-                            <p class="timeline__period">2022 - Present</p>
-                            <p class="timeline__company">Company Name, New Jersey</p>
-                            <ul class="timeline__list">
-                                <li>Lead integration engineer for 50+ hospital interfaces</li>
-                                <li>Implemented FHIR-based APIs for modern healthcare applications</li>
-                                <li>Reduced interface downtime by 40% through proactive monitoring</li>
-                                <li>Mentored junior engineers and established best practices</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline__item">
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Senior Healthcare Integration Engineer</h3>
-                            <p class="timeline__period">2022 - Present</p>
-                            <p class="timeline__company">Company Name, New Jersey</p>
-                            <ul class="timeline__list">
-                                <li>Lead integration engineer for 50+ hospital interfaces</li>
-                                <li>Implemented FHIR-based APIs for modern healthcare applications</li>
-                                <li>Reduced interface downtime by 40% through proactive monitoring</li>
-                                <li>Mentored junior engineers and established best practices</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <span class="transition group-open:rotate-180">&#x2304;</span>
+          </summary>
+          <ul class="px-6 pb-4 list-disc text-sm">
+            <li>Built scalable interfaces delivering real‑time patient scheduling.</li>
+            <li>Introduced automated testing pipeline reducing defects by 30%.</li>
+            <li>Led cross‑functional initiatives with product and clinical teams.</li>
+          </ul>
+        </details>
+        <details class="group bg-gray-50 dark:bg-gray-800 rounded-md">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-4">
+            <div>
+              <h4 class="font-medium">Principal Engineer – FAANG Health Division</h4>
+              <p class="text-sm text-gray-600 dark:text-gray-400">2018 – 2021 | Spring Boot, Kafka, Terraform</p>
             </div>
-        </section>
+            <span class="transition group-open:rotate-180">&#x2304;</span>
+          </summary>
+          <ul class="px-6 pb-4 list-disc text-sm">
+            <li>Architected interoperability platform powering nationwide health apps.</li>
+            <li>Deployed secure API management with OAuth2/OIDC.</li>
+            <li>Championed AI-driven analytics to predict clinical no‑shows.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section section--contact">
-            <div class="container">
-                <h2 class="section__title">Let's Connect</h2>
-                <div class="contact__container">
-                    <div class="contact__info">
-                        <h3>Get in Touch</h3>
-                        <p>Interested in discussing healthcare integration solutions? Let's talk about how I can help your organization.</p>
-                        <div class="contact__social">
-                            <a href="https://linkedin.com/in/yourprofile" class="contact__social-link" target="_blank" rel="noopener">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/yourprofile" class="contact__social-link" target="_blank" rel="noopener">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact__details">
-                        <div class="contact__detail-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div class="contact__detail-content">
-                                <h4>Phone</h4>
-                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                            </div>
-                        </div>
-                        <div class="contact__detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="contact__detail-content">
-                                <h4>Email</h4>
-                                <p><a href="mailto:darshit@example.com">darshit@example.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact__detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="contact__detail-content">
-                                <h4>Location</h4>
-                                <p>New Jersey, United States</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Certifications & Education -->
+    <section id="certifications" class="bg-gray-50 dark:bg-gray-800 py-16 px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Certifications & Education</h3>
+      <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow">
+          <h4 class="font-medium mb-2">Certifications</h4>
+          <ul class="list-disc list-inside text-sm">
+            <li>AWS Certified Solutions Architect</li>
+            <li>HL7 Certified Specialist</li>
+            <li>Certified Kubernetes Administrator</li>
+            <li>Epic Bridges</li>
+          </ul>
+        </div>
+        <div class="p-4 bg-white dark:bg-gray-900 rounded shadow">
+          <h4 class="font-medium mb-2">Education</h4>
+          <ul class="list-disc list-inside text-sm">
+            <li>MS in Computer Science, 2026</li>
+            <li>B.E. in Information Technology</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p class="footer__copyright">© 2024 Darshit Panchal. All rights reserved.</p>
-                <p class="footer__trademark">All trademarks, logos, and brand names are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. Their use does not imply endorsement.</p>
-            </div>
-        </footer>
-    </main>
+    <!-- Projects & Open Source -->
+    <section id="projects" class="max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Projects & Open Source</h3>
+      <ul class="space-y-4">
+        <li class="p-4 bg-gray-50 dark:bg-gray-800 rounded shadow">
+          <h4 class="font-medium">FHIR Mapping Library</h4>
+          <p class="text-sm">Reusable transformations for HL7v2 ↔ FHIR resources.</p>
+        </li>
+        <li class="p-4 bg-gray-50 dark:bg-gray-800 rounded shadow">
+          <h4 class="font-medium">Cloud-native EHR Connector</h4>
+          <p class="text-sm">Serverless connector enabling secure EHR access.</p>
+        </li>
+        <li class="p-4 bg-gray-50 dark:bg-gray-800 rounded shadow">
+          <h4 class="font-medium">AI-Powered No-show Predictor</h4>
+          <p class="text-sm">Machine learning model anticipating patient no‑shows.</p>
+        </li>
+        <li class="p-4 bg-gray-50 dark:bg-gray-800 rounded shadow">
+          <h4 class="font-medium">Blog & Talks</h4>
+          <p class="text-sm">HIMSS 2026: Scaling Interoperability with FHIR.</p>
+        </li>
+      </ul>
+    </section>
 
-    <script src="assets/js/navigation.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Soft Skills -->
+    <section id="skills" class="bg-gray-50 dark:bg-gray-800 py-16 px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Soft Skills</h3>
+      <div class="max-w-3xl mx-auto flex flex-wrap justify-center gap-4">
+        <span class="px-4 py-2 bg-white dark:bg-gray-900 rounded shadow">Leadership</span>
+        <span class="px-4 py-2 bg-white dark:bg-gray-900 rounded shadow">Mentoring</span>
+        <span class="px-4 py-2 bg-white dark:bg-gray-900 rounded shadow">Cross-functional Collaboration</span>
+        <span class="px-4 py-2 bg-white dark:bg-gray-900 rounded shadow">Public Speaking</span>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold text-center mb-8">Blog</h3>
+      <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded shadow">
+        <h4 class="font-medium">Building Secure FHIR APIs on Cloud</h4>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Coming soon...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-6 text-center">
+    <div class="max-w-5xl mx-auto space-y-2">
+      <div class="flex justify-center gap-4">
+        <a href="mailto:darshit@example.com" class="hover:underline">Email</a>
+        <a href="https://github.com/yourgithub" target="_blank" rel="noopener" class="hover:underline">GitHub</a>
+        <a href="https://linkedin.com/in/darshit" target="_blank" rel="noopener" class="hover:underline">LinkedIn</a>
+      </div>
+      <p class="text-sm">Built with HTML, TailwindCSS, and JavaScript.</p>
+      <p class="text-sm">&copy; 2024 Darshit Rajnikant Panchal</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
